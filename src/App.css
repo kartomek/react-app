@@ -1,0 +1,130 @@
+.App{
+    width: 574px;
+    height: 402px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App-logo{
+    margin-top: 80px;
+    width: 62px;
+    height: 62px;
+}
+
+.App-header{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.App-phone-static{
+    width: 100%;
+    height: 30px;
+}
+
+.App-phone-static,
+.App-phone{
+    position: relative;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+.App-phone-first {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.App-phone-last {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.static-phone-number{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: blue
+}
+
+.App-phone,
+.App-button{
+    width: 60%;
+    height: 30px;
+}
+
+.App-phone-reedit {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-weight: 500;
+
+}
+
+.App-button{
+    position: relative;
+    background-color: rgb(79,70,229);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.App-button-padlock{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+}
+
+.App-resume{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.App-phone-container{
+    position: relative;
+    width: 60%;
+}
+
+.App-resume-resend{
+    cursor: pointer;
+}
+
+.App-button:disabled{
+    background-color: rgb(218, 218, 218);
+}
+
+.App-active-resend {
+    color:rgb(79,70,229);
+    cursor: pointer;
+}
+
+.App-non-active-resend {
+    color: lightgray;
+    cursor: not-allowed;
+}
+
+@media(max-width: 600px){
+    .App{
+        width: 90%;
+    }
+
+    .App-phone-container,
+    .App-resume,
+    .App-phone,
+    .App-button{
+        width: 80%;
+    }
+}
