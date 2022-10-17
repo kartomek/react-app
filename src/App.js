@@ -31,9 +31,6 @@ function App() {
 
   const sendRequest = async () => {
     try {
-      // TODO:
-      // ideally use React Query or write your own API 
-      // sender/provider to avoid boilerplate code with loader state
       setSendingNumber(true);
       await sendNumber(phone);
       setPage(1);
